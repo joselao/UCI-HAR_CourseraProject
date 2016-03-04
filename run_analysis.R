@@ -96,11 +96,11 @@ FULL2 <- FULL[,vector]
 rm(vector)
 
 # 3) Uses descriptive activity names to name the activities in the data set
-# done before check with: > print(FULL2$activity)
-    
+# done before, check with: > print(FULL2$activity)
+
 # 4) Appropriately labels the data set with descriptive variable names.
-# done before check with: > print(names(FULL2))
-    
+# done before, check with: > print(names(FULL2))
+
 # 5) From the data set in step 4, creates a second, independent tidy data set with the average
 #    of each variable for each activity and each subject.
 # I tryed with ddply:
@@ -114,4 +114,4 @@ ResultsStats <- aggregate(data=FULL2, . ~ activity + subject, FUN=mean)
 print(head(ResultsStats))
 
 # exporting result data
-write.table(ResultsStats, "week4_final_project_result_stats.txt", row.names=FALSE)
+write.table(ResultsStats, "run_analysis_result.txt", row.names=FALSE)

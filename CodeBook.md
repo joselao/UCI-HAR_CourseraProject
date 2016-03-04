@@ -1,8 +1,6 @@
----
-title: "CodeBook"
-output: html_document
----
-The [week4_final_project_result_stats.txt](week4_final_project_result_stats.txt) file are the mean statistics agregated by subject and activity of the main tables located inside the [./UCI HAR Dataset/](./UCI HAR Dataset/) directory.
+# CodeBook
+
+The [run_analysis_result.txt](run_analysis_result.txt) file are the mean statistics agregated by subject and activity of the main tables located inside the [./UCI HAR Dataset/](./UCI HAR Dataset/) directory.
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -13,11 +11,9 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-The set of variables that were estimated from these signals are: 
-mean(): Mean value
-std(): Standard deviation
-
-The variables of the [week4_final_project_result_stats.txt](week4_final_project_result_stats.txt) file are:
+## Workflow
+[run_analysis_result.txt](run_analysis_result.txt) contains a mean statistical process of al mean and std columns of the original data.
+The variables of the [run_analysis_result.txt](run_analysis_result.txt) file are:
 ```R
 * activity: subject activitiy --> WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 * subject: Id of the subject
